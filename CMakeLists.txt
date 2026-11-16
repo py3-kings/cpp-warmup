@@ -20,3 +20,18 @@ add_test(
     COMMAND toolchain_check
 )
 
+add_executable(
+    lifetime
+    labs/w01/lifetime.cpp
+)
+
+target_compile_features(
+   lifetime
+   PRIVATE
+   cxx_std_17
+)
+
+add_test(
+    NAME lifetime
+    COMMAND lifetime
+)
