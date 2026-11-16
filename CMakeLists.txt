@@ -35,3 +35,19 @@ add_test(
     NAME lifetime
     COMMAND lifetime
 )
+
+add_executable(
+    pointers
+    labs/w01/pointers.cpp
+)
+
+target_compile_features(
+    pointers
+    PRIVATE
+    cxx_std_17
+)
+
+add_test(
+    NAME pointers
+    COMMAND pointers
+)
