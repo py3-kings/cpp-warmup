@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main() {
+    // TODO 1: ??????? toolchain-ok????
+    std::cout << "toolchain-ok" << std::endl;
+
+    // TODO 2: ???????
+    return 0 ;
+}
