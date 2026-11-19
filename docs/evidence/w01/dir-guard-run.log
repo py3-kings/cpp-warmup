@@ -1,0 +1,18 @@
+=== TEST: Normal path ===
+[OPEN DIR] data/
+[CLOSE DIR] count=1,status=ok
+Normal path: PASS
+=== TEST: Open failure ===
+[EXPECTED ERROR] opendir failed: data/w1cpp4_missing_dir: No such file or directory
+Open failure: PASS
+
+=== TEST: Exception path ===
+[OPEN DIR] data/
+Throwing exception...
+[CLOSE DIR] count=2,status=ok
+[CAUGHT] simulated directory exception
+Exception path: PASS
+
+Total close count: 2
+Close failure count: 0
+=== FINAL RESULT: PASS ===

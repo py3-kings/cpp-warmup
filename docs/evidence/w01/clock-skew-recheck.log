@@ -1,0 +1,33 @@
+===== CLEAN BUILD DIRECTORY =====
+BUILD_DIR=/tmp/w1-cmake-review-8X0Xn3
+===== CMAKE CONFIGURE =====
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/w1-cmake-review-8X0Xn3
+CONFIGURE_RC=0
+===== CLEAN BUILD =====
+[ 25%] Building CXX object CMakeFiles/toolchain_check.dir/labs/w01/toolchain.cpp.o
+[ 50%] Linking CXX executable toolchain_check
+[ 50%] Built target toolchain_check
+[ 75%] Building CXX object CMakeFiles/lifetime.dir/labs/w01/lifetime.cpp.o
+[100%] Linking CXX executable lifetime
+[100%] Built target lifetime
+BUILD_RC=0
+===== CTEST =====
+Internal ctest changing into directory: /tmp/w1-cmake-review-8X0Xn3
+Test project /tmp/w1-cmake-review-8X0Xn3
+    Start 1: toolchain_check
+1/2 Test #1: toolchain_check ..................   Passed    0.00 sec
+    Start 2: lifetime
+2/2 Test #2: lifetime .........................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+CTEST_RC=0

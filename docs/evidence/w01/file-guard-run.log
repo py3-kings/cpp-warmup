@@ -1,0 +1,19 @@
+=== TEST 1: Normal path ===
+[OPEN] data/guard.txt
+[CLOSE] count=1,status=ok
+Normal path: PASS
+
+=== TEST 2: Open failure ===
+[EXPECTED ERROR] fopen failed: data/w1cpp4_missing_dir/guard.txt: No such file or directory
+Open failure: PASS
+
+=== TEST 3: Exception path ===
+[OPEN] data/guard.txt
+Throwing exception...
+[CLOSE] count=2,status=ok
+[CAUGHT] simulated exception
+Exception path: PASS
+
+Total close count: 2
+Close failure count: 0
+=== FINAL RESULT: PASS ===

@@ -1,0 +1,16 @@
+before=10
+inside=11
+after=10
+ref_inside=11
+ref_after=11
+ptr_inside=12
+ptr_after=12
+ptr_ok=true
+ptr_null
+ptr_null_ok=false
+final_n=12
+inspect=12
+after_inspect=12
+variant_before=10
+variant_after=11
+original_n=12

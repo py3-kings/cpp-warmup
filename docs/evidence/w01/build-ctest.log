@@ -1,0 +1,33 @@
+===== CMAKE CONFIGURE =====
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /mnt/d/work/cpp-media-player/build-wsl
+CONFIGURE_RC=0
+===== BUILD =====
+gmake: Warning: File 'Makefile' has modification time 0.2 s in the future
+gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.21 s in the future
+gmake[2]: Warning: File 'CMakeFiles/toolchain_check.dir/progress.make' has modification time 0.2 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'CMakeFiles/toolchain_check.dir/progress.make' has modification time 0.076 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 50%] Built target toolchain_check
+gmake[2]: Warning: File 'CMakeFiles/lifetime.dir/progress.make' has modification time 0.051 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'CMakeFiles/lifetime.dir/compiler_depend.make' has modification time 0.19 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target lifetime
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake: warning:  Clock skew detected.  Your build may be incomplete.
+BUILD_RC=0
+===== CTEST =====
+Internal ctest changing into directory: /mnt/d/work/cpp-media-player/build-wsl
+Test project /mnt/d/work/cpp-media-player/build-wsl
+    Start 1: toolchain_check
+1/2 Test #1: toolchain_check ..................   Passed    0.00 sec
+    Start 2: lifetime
+2/2 Test #2: lifetime .........................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.02 sec
+CTEST_RC=0
