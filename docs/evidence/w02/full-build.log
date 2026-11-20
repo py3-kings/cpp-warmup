@@ -1,0 +1,7 @@
+[ 33%] Building CXX object CMakeFiles/lifetime.dir/labs/w01/lifetime.cpp.o
+[ 33%] Building CXX object CMakeFiles/toolchain_check.dir/labs/w01/toolchain.cpp.o
+[ 50%] Linking CXX executable toolchain_check
+[ 66%] Linking CXX executable lifetime
+[ 66%] Built target toolchain_check
+[100%] Built target w2_word_count
+[100%] Built target lifetime
