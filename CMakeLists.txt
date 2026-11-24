@@ -138,3 +138,43 @@ set_tests_properties(
     PROPERTIES
     TIMEOUT 15
 )
+
+# W2-C++-2: smart pointer experiments
+add_executable(
+    w2_smart_pointer
+    labs/w02/smart_pointer.cpp
+)
+
+target_compile_features(
+    w2_smart_pointer
+    PRIVATE cxx_std_17
+)
+
+# W2-C++-2: independent FileGuard variant
+add_executable(
+    w2_file_guard_variant
+    labs/w02/file_guard_variant.cpp
+)
+
+target_compile_features(
+    w2_file_guard_variant
+    PRIVATE cxx_std_17
+)
+
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/artifacts")
+
+add_test(
+    NAME w2_cpp_2_smart_pointer
+    COMMAND $<TARGET_FILE:w2_smart_pointer>
+)
+
+add_test(
+    NAME w2_cpp_2_file_guard_variant
+    COMMAND $<TARGET_FILE:w2_file_guard_variant>
+)
+
+set_tests_properties(
+    w2_cpp_2_smart_pointer
+    w2_cpp_2_file_guard_variant
+    PROPERTIES TIMEOUT 15
+)
